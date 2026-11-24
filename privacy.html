@@ -59,11 +59,35 @@ code{
 }
 table{
   width:100%;border-collapse:collapse;margin:0 0 20px;font-size:14.5px;
-  display:block;overflow-x:auto;white-space:nowrap
+  table-layout:fixed
 }
-th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--stroke);vertical-align:top}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--stroke);vertical-align:top;overflow-wrap:anywhere}
 th{color:var(--text3);font-weight:600;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase}
 tbody tr:last-child td{border-bottom:none}
+
+/*
+  ⚠ 窄螢幕不能靠橫向捲動：法律文件要能直接讀完。
+  之前用 display:block + overflow-x:auto + white-space:nowrap，實測 430px 下
+  右欄文字被切在畫面外，而且沒有可見的捲動提示 —— 等於內容讀不到。
+  改為在 640px 以下把每行拆成「標籤 / 值」上下堆疊。
+*/
+@media(max-width:640px){
+  table{border-collapse:separate;border-spacing:0}
+  thead{display:none}
+  tbody tr{
+    display:block;padding:12px 0;
+    border-bottom:1px solid var(--stroke)
+  }
+  tbody tr:last-child{border-bottom:none}
+  tbody td{
+    display:block;border:none;padding:0 4px
+  }
+  tbody td:first-child{
+    color:var(--text3);font-size:12px;letter-spacing:.05em;
+    text-transform:uppercase;margin-bottom:3px
+  }
+  tbody td:last-child{color:var(--text)}
+}
 .lang{
   display:inline-flex;gap:4px;background:var(--surface);border:1px solid var(--stroke);
   border-radius:999px;padding:4px;margin:22px 0 0;font-size:13px
