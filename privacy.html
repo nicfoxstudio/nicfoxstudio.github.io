@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私政策 · 香港交通相機預警</title>
+<meta name="description" content="香港交通相機預警（NicFox Studio）隱私政策 — Privacy Policy for HK Traffic Camera Alert">
+<style>
+:root{
+  --bg:#0b0b0d; --surface:#17171b; --surface2:#202027;
+  --text:#f2f2f5; --text2:#a8a8b3; --text3:#72727e;
+  --primary:#4dd0e1; --danger:#ff8a80; --ok:#69f0ae; --stroke:#ffffff1f;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  padding:0 20px 72px;
+}
+.wrap{max-width:760px;margin:0 auto}
+header{padding:40px 0 8px}
+h1{font-size:30px;line-height:1.3;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--text3);font-size:14px;margin:0}
+.meta{
+  display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 0;
+  padding:14px 18px;background:var(--surface);border:1px solid var(--stroke);
+  border-radius:18px;font-size:13px;color:var(--text2)
+}
+.meta b{color:var(--text);font-weight:600}
+h2{
+  font-size:20px;margin:44px 0 12px;padding-top:22px;
+  border-top:1px solid var(--stroke);letter-spacing:-.01em
+}
+h2:first-of-type{border-top:none;padding-top:0}
+h3{font-size:16px;margin:26px 0 8px;color:var(--primary)}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 16px;padding-left:1.3em}
+li{margin:6px 0}
+li::marker{color:var(--text3)}
+a{color:var(--primary);text-decoration:none;border-bottom:1px solid #4dd0e140}
+a:hover{border-bottom-color:var(--primary)}
+code{
+  background:var(--surface2);padding:2px 7px;border-radius:6px;
+  font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace
+}
+.card{
+  background:var(--surface);border:1px solid var(--stroke);
+  border-radius:22px;padding:20px 22px;margin:0 0 20px
+}
+.card h3{margin-top:0}
+.note{
+  background:#1e3b40;border:1px solid #4dd0e155;border-radius:18px;
+  padding:16px 20px;margin:0 0 20px;font-size:14.5px;color:#cfeff4
+}
+.warn{
+  background:#3b1f1f;border:1px solid #ff8a8055;border-radius:18px;
+  padding:16px 20px;margin:0 0 20px;font-size:14.5px;color:#ffd9d4
+}
+table{
+  width:100%;border-collapse:collapse;margin:0 0 20px;font-size:14.5px;
+  display:block;overflow-x:auto;white-space:nowrap
+}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--stroke);vertical-align:top}
+th{color:var(--text3);font-weight:600;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase}
+tbody tr:last-child td{border-bottom:none}
+.lang{
+  display:inline-flex;gap:4px;background:var(--surface);border:1px solid var(--stroke);
+  border-radius:999px;padding:4px;margin:22px 0 0;font-size:13px
+}
+.lang a{padding:6px 16px;border-radius:999px;border:none;color:var(--text2)}
+.lang a.on{background:var(--surface2);color:var(--text)}
+footer{
+  margin-top:56px;padding-top:24px;border-top:1px solid var(--stroke);
+  color:var(--text3);font-size:13px;line-height:1.9
+}
+footer a{color:var(--text2)}
+hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
+.en h2{font-size:19px}
+.en h3{font-size:15px}
+@media(max-width:520px){
+  body{font-size:15.5px;padding:0 16px 56px}
+  h1{font-size:25px}
+  h2{font-size:18px}
+  .meta{font-size:12.5px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>隱私政策</h1>
+  <p class="sub">香港交通相機預警 · HK Traffic Camera Alert</p>
+  <div class="meta">
+    <span>營運者：<b>NicFox Studio</b></span>
+    <span>套件：<code>com.nicfox.hktrafficcamera</code></span>
+    <span>生效日期：<b>2026-11-24</b></span>
+    <span>版本：<b>1.0</b></span>
+  </div>
+  <div class="lang"><a href="#zh" class="on">繁體中文</a><a href="#en">English</a></div>
+</header>
+
+<!-- ═══════════════════════════ 中文 ═══════════════════════════ -->
+<section id="zh">
+
+<div class="note">
+  <strong>一句話總結：</strong>本 App 的定位資料與行車記錄<strong>只在你的手機上處理</strong>，
+  我們沒有伺服器，也不會把你的位置、車速或行車軌跡傳送給我們。
+  唯一會接觸到外部的是 Google 地圖／街景與廣告服務（見第 4 節）。
+</div>
+
+<h2>1. 誰是營運者</h2>
+<p>
+  本 App「香港交通相機預警」（套件名稱 <code>com.nicfox.hktrafficcamera</code>，下稱「本 App」）
+  由 <strong>NicFox Studio</strong>（下稱「我們」）開發及營運。
+</p>
+<p>
+  隱私相關查詢、資料刪除請求或投訴，請電郵
+  <a href="mailto:nicklam.ebiz@gmail.com">nicklam.ebiz@gmail.com</a>，我們會在 30 日內回覆。
+</p>
+
+<h2>2. 本 App 做什麼</h2>
+<p>
+  本 App 利用你手機的定位，計算你與香港運輸署已公布的測速執法相機、衝紅燈攝影機之間的距離，
+  在你接近時以粵語語音及懸浮窗提示，並顯示所在路段的法定限速。
+  本 App <strong>只作提示</strong>，不會控制車輛，也不是官方執法工具。
+</p>
+
+<h2>3. 我們收集及使用的資料</h2>
+
+<h3>3.1 精確位置（GPS）</h3>
+<table>
+  <thead><tr><th>項目</th><th>內容</th></tr></thead>
+  <tbody>
+    <tr><td>收集什麼</td><td>裝置的精確位置（緯度、經度、海拔、速度、方向、定位精度）</td></tr>
+    <tr><td>為何收集</td><td>計算與相機的距離、判斷你是否朝向該相機、顯示所在路段限速、超速提示</td></tr>
+    <tr><td>何時收集</td><td>你開啟「背景提醒」開關期間；關閉後立即停止</td></tr>
+    <tr><td>如何處理</td><td><strong>全程在你的裝置上計算</strong>。不會上傳至我們或任何由我們營運的伺服器</td></tr>
+    <tr><td>可否拒絕</td><td>可以。拒絕定位權限後，本 App 無法計算距離，因此核心功能不可用</td></tr>
+  </tbody>
+</table>
+
+<h3>3.2 行車記錄（本機檔案）</h3>
+<p>
+  當「背景提醒」開啟時，本 App 會在<strong>你手機的應用程式專屬目錄</strong>寫入行車記錄：
+</p>
+<p><code>Android/data/com.nicfox.hktrafficcamera/files/logs/</code></p>
+<p>記錄內容包括：時間戳、位置座標、車速、航向、定位精度、觸發了哪些提示、播放了哪句語音。</p>
+<ul>
+  <li>這些檔案<strong>只存在你的裝置上</strong>，我們無法讀取。</li>
+  <li>用途是讓你自己核對「提示是否準確」，以及在你自己選擇的情況下匯出給第三方分析。</li>
+  <li>匯出功能使用 Android 系統的分享面板，<strong>由你決定</strong>傳送去哪裡；一經你分享，該檔案的後續處理就受該目的地（例如通訊軟件、雲端硬碟）的政策規管。</li>
+  <li>你可隨時在設定頁刪除，或解除安裝本 App 一併清除。</li>
+</ul>
+
+<h3>3.3 設定值</h3>
+<p>
+  你調整的播報距離、同向容差、音色、懸浮窗透明度等，儲存在裝置本機的
+  <code>SharedPreferences</code>，不上傳。
+</p>
+
+<h3>3.4 我們<strong>不會</strong>收集的資料</h3>
+<ul>
+  <li>姓名、電郵、電話號碼、住址或任何帳戶資料（本 App 無需註冊）</li>
+  <li>通訊錄、通話記錄、短訊</li>
+  <li>相片、影片、麥克風錄音（本 App 不存取相機或麥克風）</li>
+  <li>行事曆、健康資料、財務資料</li>
+  <li>你裝置上的其他檔案</li>
+</ul>
+
+<h2>4. 第三方服務</h2>
+<p>本 App 使用以下 Google 服務。它們會直接從你的裝置接收資料，我們無法攔截或阻止。</p>
+
+<div class="card">
+  <h3>4.1 Google Maps SDK for Android 及 Street View</h3>
+  <p>
+    用於顯示相機地圖及互動街景。Google 會接收地圖圖磚與街景的請求，
+    這些請求<strong>包含你目前顯示範圍的位置</strong>、IP 位址、裝置型號及作業系統版本。
+  </p>
+  <p>
+    相關政策：
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a> ·
+    <a href="https://maps.google.com/help/terms_maps/" target="_blank" rel="noopener">Google 地圖附加服務條款</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>4.2 Google AdMob（廣告）</h3>
+  <p>免費版本會顯示廣告。Google Mobile Ads SDK 可能收集並使用：</p>
+  <ul>
+    <li><strong>廣告 ID</strong>（Android Advertising ID，可由你在系統設定重設或刪除）</li>
+    <li>IP 位址（用於粗略地區判斷及防止欺詐）</li>
+    <li>裝置資料（型號、作業系統版本、語言、螢幕尺寸）</li>
+    <li>廣告互動記錄（展示、點擊）</li>
+    <li>應用程式使用情況（例如開啟次數），用於廣告頻率控制</li>
+  </ul>
+  <p>
+    <strong>個人化廣告</strong>只會在取得你的同意後提供。位於歐洲經濟區、英國或瑞士的用戶
+    會先看到由 Google 認證的同意管理平台（UMP）發出的同意表格；拒絕個人化廣告不影響你使用本 App，
+    你仍會看到非個人化廣告。
+  </p>
+  <p>
+    你可隨時在 Android 系統設定 → Google → 廣告 中重設或刪除廣告 ID，
+    或選擇「不允許個人化廣告」。
+  </p>
+  <p>
+    <strong>付費移除廣告後</strong>，本 App 不會再載入廣告，亦不會初始化廣告 SDK 的請求。
+  </p>
+  <p>
+    相關政策：
+    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 廣告政策</a> ·
+    <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob 政策</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>4.3 相機資料更新（由你主動觸發）</h3>
+  <p>
+    設定頁有一個「檢查線上更新」功能。只有你按下該按鈕時，本 App 才會以
+    <code>GET</code> 方式向你填寫的網址下載一份新的相機資料（JSON）。
+    該請求不包含你的位置或任何個人資料，只包含標準的 HTTP 標頭。
+  </p>
+</div>
+
+<h2>5. 我們會否出售或分享你的資料</h2>
+<p>
+  <strong>不會。</strong>我們沒有你的資料可以出售 —— 位置與行車記錄從未離開你的裝置。
+  除第 4 節所述的 Google 服務外，我們不會向任何第三方披露、出售或轉移你的資料。
+</p>
+<p>
+  唯一例外是法律要求：如收到有效的法律程序（例如法院命令），而我們<strong>持有</strong>相關資料，
+  我們會依法配合。但如上所述，我們實際上並不持有你的位置或行車記錄。
+</p>
+
+<h2>6. 資料保存期限</h2>
+<table>
+  <thead><tr><th>資料</th><th>保存位置</th><th>保存多久</th></tr></thead>
+  <tbody>
+    <tr><td>精確位置</td><td>僅在記憶體中即時計算</td><td>不保存（下次更新即覆蓋）</td></tr>
+    <tr><td>行車記錄</td><td>你的裝置，應用程式專屬目錄</td><td>直到你自行刪除或解除安裝</td></tr>
+    <tr><td>設定值</td><td>你的裝置</td><td>直到你解除安裝或清除資料</td></tr>
+    <tr><td>我們伺服器上的資料</td><td>—</td><td><strong>不適用（我們沒有伺服器）</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>7. 你的權利</h2>
+<ul>
+  <li><strong>撤回定位權限</strong>：Android 設定 → 應用程式 → 香港交通相機預警 → 權限</li>
+  <li><strong>刪除行車記錄</strong>：設定頁 →「清除行車記錄」</li>
+  <li><strong>刪除全部本機資料</strong>：解除安裝本 App</li>
+  <li><strong>關閉個人化廣告</strong>：Android 設定 → Google → 廣告</li>
+  <li><strong>查詢或投訴</strong>：電郵 <a href="mailto:nicklam.ebiz@gmail.com">nicklam.ebiz@gmail.com</a></li>
+</ul>
+<p>
+  由於我們不持有你的個人資料，一般而言無法「提供副本」或「更正」——
+  因為資料一直只在你手上。若你認為本 App 的處理方式不當，亦可向
+  香港個人資料私隱專員公署（PCPD）投訴。
+</p>
+
+<h2>8. 兒童</h2>
+<p>
+  本 App 是為<strong>駕駛者</strong>設計的工具，目標使用者為 18 歲或以上人士，
+  <strong>並非</strong>針對兒童，我們不會刻意向兒童收集任何資料。
+  本 App 未加入 Google Play 的「家庭／兒童」計劃。
+</p>
+<p>
+  如你認為有兒童在未經監護人同意的情況下使用了本 App，請聯絡我們，
+  我們會協助你了解如何在裝置上刪除相關本機資料。
+</p>
+
+<h2>9. 資料安全</h2>
+<ul>
+  <li>位置與行車記錄儲存在 Android 的<strong>應用程式沙盒</strong>內，其他 App 無法讀取。</li>
+  <li>與 Google 服務之間的通訊使用 HTTPS 加密。</li>
+  <li>本 App 不需要帳戶，不存在密碼外洩風險。</li>
+  <li>
+    你仍應注意：如你的手機已 root、被他人實體取用，或你自行匯出行車記錄，
+    該等資料的保護就取決於你的裝置設定及你選擇的分享目的地。
+  </li>
+</ul>
+
+<h2>10. 政策變更</h2>
+<p>
+  如本政策有重大變更（例如新增第三方服務、改變資料用途），我們會更新本頁頂部的
+  「生效日期」及版本號，並在 App 更新說明中註明。
+  建議你在更新 App 後回來查看本頁。
+</p>
+
+<h2>11. 適用法律</h2>
+<p>
+  本政策受<strong>香港特別行政區法律</strong>管轄，並按香港《個人資料（私隱）條例》
+  （第 486 章）的原則處理個人資料。
+</p>
+
+</section>
+
+<hr>
+
+<!-- ═══════════════════════════ English ═══════════════════════════ -->
+<section id="en" class="en">
+<h1 style="font-size:26px;margin:0 0 6px">Privacy Policy</h1>
+<p class="sub">HK Traffic Camera Alert · 香港交通相機預警</p>
+
+<div class="note">
+  <strong>In one sentence:</strong> all location processing and driving logs stay
+  <strong>on your device</strong>. We operate no server and never receive your location,
+  speed, or driving history. The only external parties involved are Google's map,
+  street-view and advertising services (see section 4).
+</div>
+
+<h2>1. Who we are</h2>
+<p>
+  This app, <strong>HK Traffic Camera Alert</strong> (package <code>com.nicfox.hktrafficcamera</code>,
+  the “App”), is developed and operated by <strong>NicFox Studio</strong> (“we”, “us”).
+</p>
+<p>
+  For privacy questions, data-deletion requests or complaints, email
+  <a href="mailto:nicklam.ebiz@gmail.com">nicklam.ebiz@gmail.com</a>. We respond within 30 days.
+</p>
+
+<h2>2. What the App does</h2>
+<p>
+  The App uses your device's location to compute your distance to speed-enforcement cameras and
+  red-light cameras published by the Hong Kong Transport Department. As you approach, it plays a
+  Cantonese voice alert and shows a floating overlay, together with the posted speed limit for the
+  road segment you are on. The App is <strong>advisory only</strong>. It does not control any
+  vehicle and is not an official enforcement tool.
+</p>
+
+<h2>3. Data we collect and use</h2>
+
+<h3>3.1 Precise location (GPS)</h3>
+<table>
+  <thead><tr><th>Item</th><th>Detail</th></tr></thead>
+  <tbody>
+    <tr><td>Collected</td><td>Precise location (latitude, longitude, altitude, speed, bearing, accuracy)</td></tr>
+    <tr><td>Purpose</td><td>Distance to cameras, whether you are travelling toward them, speed limit of the current segment, overspeed warnings</td></tr>
+    <tr><td>When</td><td>Only while the “Background alerts” switch is on; stops immediately when you turn it off</td></tr>
+    <tr><td>Processing</td><td><strong>Entirely on your device.</strong> Never uploaded to us or to any server we operate</td></tr>
+    <tr><td>Refusal</td><td>You may refuse. Without location the App cannot compute distances, so the core feature is unavailable</td></tr>
+  </tbody>
+</table>
+
+<h3>3.2 Driving logs (local files only)</h3>
+<p>
+  While alerts are running, the App writes driving logs to its own app-specific directory on
+  your device: <code>Android/data/com.nicfox.hktrafficcamera/files/logs/</code>
+</p>
+<p>
+  A log entry contains: timestamp, coordinates, speed, bearing, location accuracy, which alerts
+  fired, and which voice clip played.
+</p>
+<ul>
+  <li>These files exist <strong>only on your device</strong>. We cannot read them.</li>
+  <li>Their purpose is for you to verify alert accuracy, and — if you choose — to export them for
+      your own analysis.</li>
+  <li>Export uses the Android system share sheet. <strong>You</strong> decide the destination; once
+      shared, that copy is governed by the destination's own policy (messaging app, cloud drive, …).</li>
+  <li>You can delete them at any time in Settings, or by uninstalling the App.</li>
+</ul>
+
+<h3>3.3 Settings</h3>
+<p>
+  Alert distances, direction tolerance, voice choice, overlay opacity and similar preferences are
+  stored in on-device <code>SharedPreferences</code>. Not uploaded.
+</p>
+
+<h3>3.4 What we do <strong>not</strong> collect</h3>
+<ul>
+  <li>Name, email, phone number, postal address, or any account data (the App requires no sign-up)</li>
+  <li>Contacts, call logs, SMS</li>
+  <li>Photos, videos, or microphone audio (the App does not access camera or microphone)</li>
+  <li>Calendar, health, or financial data</li>
+  <li>Other files on your device</li>
+</ul>
+
+<h2>4. Third-party services</h2>
+<p>
+  The App uses the following Google services. They receive data directly from your device;
+  we cannot intercept or prevent that.
+</p>
+
+<div class="card">
+  <h3>4.1 Google Maps SDK for Android and Street View</h3>
+  <p>
+    Used to display the camera map and interactive street view. Google receives map-tile and
+    panorama requests, which <strong>include the location of the area being displayed</strong>,
+    your IP address, device model and OS version.
+  </p>
+  <p>
+    Policies:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> ·
+    <a href="https://maps.google.com/help/terms_maps/" target="_blank" rel="noopener">Google Maps Additional Terms of Service</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>4.2 Google AdMob (advertising)</h3>
+  <p>The free version shows ads. The Google Mobile Ads SDK may collect and use:</p>
+  <ul>
+    <li><strong>Advertising ID</strong> (Android Advertising ID — you can reset or delete it in system settings)</li>
+    <li>IP address (coarse region and fraud prevention)</li>
+    <li>Device data (model, OS version, language, screen size)</li>
+    <li>Ad interactions (impressions, clicks)</li>
+    <li>App usage signals (e.g. open counts) for frequency capping</li>
+  </ul>
+  <p>
+    <strong>Personalised advertising</strong> is served only with your consent. Users in the EEA,
+    the UK or Switzerland are shown a consent form from Google's certified consent management
+    platform (UMP) first. Declining personalised ads does not affect your use of the App — you will
+    still see non-personalised ads.
+  </p>
+  <p>
+    You can reset or delete your advertising ID, or opt out of personalised ads, at any time in
+    Android Settings → Google → Ads.
+  </p>
+  <p>
+    <strong>After purchasing ad removal</strong>, the App stops loading ads and does not issue ad
+    SDK requests.
+  </p>
+  <p>
+    Policies:
+    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Policies</a> ·
+    <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Policies</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>4.3 Camera-data update (initiated by you)</h3>
+  <p>
+    Settings offers a “Check for updates” action. Only when you tap it does the App issue a
+    <code>GET</code> request to the URL you supply, downloading a camera-data JSON file. That request
+    contains no location or personal data — only standard HTTP headers.
+  </p>
+</div>
+
+<h2>5. Do we sell or share your data?</h2>
+<p>
+  <strong>No.</strong> We have no data to sell — your location and driving logs never leave your
+  device. Apart from the Google services listed in section 4, we do not disclose, sell or transfer
+  your data to anyone.
+</p>
+<p>
+  The only exception would be a valid legal process (e.g. a court order). As explained above, we do
+  not in fact hold your location or driving logs.
+</p>
+
+<h2>6. Retention</h2>
+<table>
+  <thead><tr><th>Data</th><th>Where</th><th>How long</th></tr></thead>
+  <tbody>
+    <tr><td>Precise location</td><td>In memory, for live computation</td><td>Not retained (overwritten each update)</td></tr>
+    <tr><td>Driving logs</td><td>Your device, app-specific directory</td><td>Until you delete them or uninstall</td></tr>
+    <tr><td>Settings</td><td>Your device</td><td>Until you uninstall or clear data</td></tr>
+    <tr><td>On our servers</td><td>—</td><td><strong>Not applicable (we have no servers)</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>7. Your rights</h2>
+<ul>
+  <li><strong>Revoke location permission</strong>: Android Settings → Apps → HK Traffic Camera Alert → Permissions</li>
+  <li><strong>Delete driving logs</strong>: Settings → “Clear driving logs”</li>
+  <li><strong>Delete all local data</strong>: uninstall the App</li>
+  <li><strong>Opt out of personalised ads</strong>: Android Settings → Google → Ads</li>
+  <li><strong>Questions or complaints</strong>: <a href="mailto:nicklam.ebiz@gmail.com">nicklam.ebiz@gmail.com</a></li>
+</ul>
+<p>
+  Because we hold no personal data about you, we generally cannot “provide a copy” or “correct”
+  anything — the data has always been in your hands. If you believe the App handles data
+  improperly, you may also complain to the Office of the Privacy Commissioner for Personal Data
+  (PCPD), Hong Kong.
+</p>
+
+<h2>8. Children</h2>
+<p>
+  The App is a tool for <strong>drivers</strong>, intended for users aged 18 and over. It is
+  <strong>not</strong> directed at children and we do not knowingly collect data from children.
+  The App is not enrolled in Google Play's Families programme.
+</p>
+
+<h2>9. Security</h2>
+<ul>
+  <li>Location and logs live inside the Android app sandbox; other apps cannot read them.</li>
+  <li>Traffic to Google services uses HTTPS.</li>
+  <li>There are no accounts, so no passwords to leak.</li>
+  <li>
+    Note that a rooted device, physical access by someone else, or your own export of logs moves
+    the protection of that copy into your hands (device settings, chosen destination).
+  </li>
+</ul>
+
+<h2>10. Changes</h2>
+<p>
+  If this policy changes materially (e.g. a new third-party service, a new purpose), we will update
+  the effective date and version at the top of this page and note it in the App's release notes.
+  Please check back after updating the App.
+</p>
+
+<h2>11. Governing law</h2>
+<p>
+  This policy is governed by the laws of the <strong>Hong Kong Special Administrative Region</strong>
+  and follows the principles of the Personal Data (Privacy) Ordinance (Cap. 486).
+</p>
+</section>
+
+<footer>
+  <p>
+    <strong>NicFox Studio</strong> · <a href="mailto:nicklam.ebiz@gmail.com">nicklam.ebiz@gmail.com</a><br>
+    <a href="terms.html">使用條款 · Terms of Use</a> ·
+    <a href="index.html">法律資訊 · Legal</a>
+  </p>
+  <p>最後更新 · Last updated: 2026-11-24 · v1.0</p>
+</footer>
+
+</div>
+</body>
+</html>

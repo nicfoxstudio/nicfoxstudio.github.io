@@ -1,0 +1,46 @@
+# app-ads.txt 模板 —— 取得 AdMob 發佈商 ID 後才啟用
+
+## 為甚麼要這個檔
+
+AdMob 會爬 `app-ads.txt` 來確認「哪些廣告交易平台有權售賣你的 App 廣告位」。
+沒有它不會令廣告停播，但會令部分買家不肯出價，收益會低一截，AdMob 後台亦會長期顯示警告。
+
+## 格式
+
+只有一行：
+
+```
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+```
+
+- `pub-XXXXXXXXXXXXXXXX` → 你的 AdMob **發佈商 ID**（16 位數字），在 AdMob 後台 → 設定 → 帳戶資訊
+- `f08c47fec0942fa0` → Google 的認證機構 ID，**固定不變**，照抄
+
+## ⚠ 位置必須是網域根目錄
+
+AdMob 只會爬網域的根：
+
+| 網站 | 正確位置 |
+|---|---|
+| `https://nicfoxstudio.github.io/` | `https://nicfoxstudio.github.io/app-ads.txt` ✅ |
+| `https://nicfoxstudio.github.io/legal/` | ❌ 爬不到，這個路徑不算 |
+
+所以本站點用 GitHub 的 **user site**（repo 名 `nicfoxstudio.github.io`），
+`legal/` 的內容直接放在該 repo 根目錄，`app-ads.txt` 就自然在根。
+
+## 啟用步驟
+
+1. 拿到 pub ID 後，把下面的內容存成 `app-ads.txt`（無 `.template`）：
+
+   ```
+   google.com, pub-你的16位數字, DIRECT, f08c47fec0942fa0
+   ```
+
+2. 確認可讀：`curl -i https://nicfoxstudio.github.io/app-ads.txt` → 200 且內容正確
+3. AdMob 後台 → 應用程式 → app-ads.txt → 按「檢查更新」
+   首次可能要等幾小時至 24 小時
+
+## 為甚麼先不建立
+
+現在 pub ID 未定，若放一個假 ID 或空白檔（只有註解），AdMob 會視為「已聲明但無授權賣家」，
+比「未設定」更難排查。所以現在**不要**存在 `app-ads.txt`，只保留本模板。
