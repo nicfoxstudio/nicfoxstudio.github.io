@@ -37,7 +37,8 @@ li{margin:6px 0}
 li::marker{color:var(--text3)}
 a{color:var(--primary);text-decoration:none;border-bottom:1px solid #4dd0e140}
 a:hover{border-bottom-color:var(--primary)}
-code{background:var(--surface2);padding:2px 7px;border-radius:6px;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+/* 長路徑／套件名必須可斷行，否則窄螢幕整頁橫向溢出 */
+code{background:var(--surface2);padding:2px 7px;border-radius:6px;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere;word-break:break-word}
 .card{background:var(--surface);border:1px solid var(--stroke);border-radius:22px;padding:20px 22px;margin:0 0 20px}
 .card h3{margin-top:0}
 .warn{background:#3b1f1f;border:1px solid #ff8a8055;border-radius:18px;padding:18px 22px;margin:0 0 22px;font-size:15px;color:#ffd9d4}

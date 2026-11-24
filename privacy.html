@@ -40,9 +40,15 @@ li{margin:6px 0}
 li::marker{color:var(--text3)}
 a{color:var(--primary);text-decoration:none;border-bottom:1px solid #4dd0e140}
 a:hover{border-bottom-color:var(--primary)}
+/*
+  ⚠ code 一定要能斷行：套件名與檔案路徑（例如
+  Android/data/com.nicfox.hktrafficcamera/files/logs/）是連續無空白的長字串，
+  預設不會換行，實測 320px 下會令整頁橫向溢出 128px。
+*/
 code{
   background:var(--surface2);padding:2px 7px;border-radius:6px;
-  font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace
+  font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  overflow-wrap:anywhere;word-break:break-word
 }
 .card{
   background:var(--surface);border:1px solid var(--stroke);
