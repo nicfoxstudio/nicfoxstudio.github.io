@@ -261,11 +261,23 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
 </div>
 
 <div class="card">
-  <h3>4.4 相機資料更新（由你主動觸發）</h3>
+  <h3>4.4 通知權限與常駐通知</h3>
   <p>
-    設定頁有一個「檢查線上更新」功能。只有你按下該按鈕時，本 App 才會以
-    <code>GET</code> 方式向你填寫的網址下載一份新的相機資料（JSON）。
-    該請求不包含你的位置或任何個人資料，只包含標準的 HTTP 標頭。
+    預警功能需要在背景持續執行（你切去導航或其他 App 時仍要提醒），
+    因此本 App 使用 Android 的前景服務，並在通知列顯示一條常駐通知，
+    內容只有「預警運作中」與目前最近的相機距離。
+  </p>
+  <p>
+    <strong>這條通知不會離開你的裝置。</strong>我們不會讀取你的其他通知，
+    也不會把你收到的通知內容上傳到任何地方。你可以隨時在
+    Android 系統設定 → 應用程式 → 通知 中關閉它（關閉後背景預警仍會運作，
+    只是你看不到那條常駐提示）。
+  </p>
+  <p>
+    本 App <strong>不會</strong>主動下載或更新任何線上資料 ——
+    相機、路段限速與交通燈三份資料都預先打包在 App 內，
+    隨 App 版本更新。所以除了第 4.1 節的 Google 地圖請求之外，
+    本 App 不會向你沒有指定的任何伺服器發出請求。
   </p>
 </div>
 
@@ -489,11 +501,24 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
 </div>
 
 <div class="card">
-  <h3>4.4 Camera-data update (initiated by you)</h3>
+  <h3>4.4 Notification permission and the ongoing notification</h3>
   <p>
-    Settings offers a “Check for updates” action. Only when you tap it does the App issue a
-    <code>GET</code> request to the URL you supply, downloading a camera-data JSON file. That request
-    contains no location or personal data — only standard HTTP headers.
+    The warning feature must keep running in the background (so it still alerts you while you
+    are in a navigation or music app). The App therefore uses an Android foreground service and
+    shows one ongoing notification, containing only “warning running” and the distance to the
+    nearest camera.
+  </p>
+  <p>
+    <strong>That notification never leaves your device.</strong> We do not read your other
+    notifications and we never upload notification content anywhere. You can turn it off at any
+    time in Android Settings → Apps → Notifications (background warnings keep working; you simply
+    will not see the ongoing notice).
+  </p>
+  <p>
+    The App does <strong>not</strong> download or update any online data. Camera, road speed-limit
+    and traffic-signal datasets are all bundled inside the App and updated with App releases. So
+    apart from the Google Maps requests described in section 4.1, the App makes no request to any
+    server you did not configure.
   </p>
 </div>
 
@@ -572,7 +597,7 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
     <a href="terms.html">使用條款 · Terms of Use</a> ·
     <a href="index.html">法律資訊 · Legal</a>
   </p>
-  <p>最後更新 · Last updated: 2026-11-26 · v1.2</p>
+  <p>最後更新 · Last updated: 2026-11-26 · v1.3</p>
 </footer>
 
 </div>
