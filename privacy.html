@@ -125,7 +125,7 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
   <div class="meta">
     <span>營運者：<b>NicFox Studio</b></span>
     <span>套件：<code>com.nicfox.hktrafficcamera</code></span>
-    <span>生效日期：<b>2026-11-24</b></span>
+    <span>生效日期：<b>2026-11-26</b></span>
     <span>版本：<b>1.0</b></span>
   </div>
   <div class="lang"><a href="#zh" class="on">繁體中文</a><a href="#en">English</a></div>
@@ -200,7 +200,10 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
 </ul>
 
 <h2>4. 第三方服務</h2>
-<p>本 App 使用以下 Google 服務。它們會直接從你的裝置接收資料，我們無法攔截或阻止。</p>
+<p>
+  本 App 使用以下第三方服務。Google 服務會直接從你的裝置接收資料，我們無法攔截或阻止。
+  交通燈資料則已打包在 App 內，不涉及任何網絡請求。
+</p>
 
 <div class="card">
   <h3>4.1 Google Maps SDK for Android 及 Street View</h3>
@@ -245,7 +248,20 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
 </div>
 
 <div class="card">
-  <h3>4.3 相機資料更新（由你主動觸發）</h3>
+  <h3>4.3 交通燈位置資料（OpenStreetMap）</h3>
+  <p>
+    地圖上的交通燈圖層使用 OpenStreetMap 的公開資料（© OpenStreetMap 貢獻者，ODbL 1.0）。
+    這份資料<strong>已預先打包在 App 內</strong>，顯示燈位時<strong>不會</strong>向
+    OpenStreetMap 或其志願者伺服器發出任何請求，因此它們不會收到你的位置或任何個人資料。
+  </p>
+  <p>
+    該資料集按 ODbL 要求公開發佈於
+    <a href="data/">nicfoxstudio.github.io/data/</a>。
+  </p>
+</div>
+
+<div class="card">
+  <h3>4.4 相機資料更新（由你主動觸發）</h3>
   <p>
     設定頁有一個「檢查線上更新」功能。只有你按下該按鈕時，本 App 才會以
     <code>GET</code> 方式向你填寫的網址下載一份新的相機資料（JSON）。
@@ -407,8 +423,9 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
 
 <h2>4. Third-party services</h2>
 <p>
-  The App uses the following Google services. They receive data directly from your device;
-  we cannot intercept or prevent that.
+  The App uses the following third-party services. The Google services receive data directly from
+  your device, and we cannot intercept or prevent that. The traffic-signal data is bundled inside the
+  App and involves no network request at all.
 </p>
 
 <div class="card">
@@ -457,7 +474,20 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
 </div>
 
 <div class="card">
-  <h3>4.3 Camera-data update (initiated by you)</h3>
+  <h3>4.3 Traffic-signal data (OpenStreetMap)</h3>
+  <p>
+    The traffic-signal layer on the map uses public OpenStreetMap data
+    (© OpenStreetMap contributors, ODbL 1.0). That data is <strong>pre-packaged inside the App</strong>;
+    rendering the lights makes <strong>no</strong> request to OpenStreetMap or its volunteer servers,
+    so they receive neither your location nor any personal data.
+  </p>
+  <p>
+    The dataset is published at <a href="data/">nicfoxstudio.github.io/data/</a> as the ODbL requires.
+  </p>
+</div>
+
+<div class="card">
+  <h3>4.4 Camera-data update (initiated by you)</h3>
   <p>
     Settings offers a “Check for updates” action. Only when you tap it does the App issue a
     <code>GET</code> request to the URL you supply, downloading a camera-data JSON file. That request
@@ -540,7 +570,7 @@ hr{border:none;border-top:1px solid var(--stroke);margin:44px 0}
     <a href="terms.html">使用條款 · Terms of Use</a> ·
     <a href="index.html">法律資訊 · Legal</a>
   </p>
-  <p>最後更新 · Last updated: 2026-11-24 · v1.0</p>
+  <p>最後更新 · Last updated: 2026-11-26 · v1.1</p>
 </footer>
 
 </div>
